@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .cellpad{
+            padding: 10px;
+            text-align: center;
+        }
+
+        .register{
+            padding: 10px;
+            margin-top: 5px;
+            width: 25%;
+            display:block;
+            border-radius: 8px;
+            border: 2px solid gray;
+        }
+    </style>
+    <title>Playing with Html</title>
+</head>
+<body>
+<h2 style="text-align: center;">Welcome to Axis Bank</h2><hr>
+<h3>Designing Indian Flag using Div Tags</h3>
+
+<div style="border: 2px solid black; margin-left: 30%;margin-right: 30%; margin-bottom: 20px;">
+    <div style="background-color:orange; height: 100px;" ></div>
+    <div style="background-color:white; height: 100px;display: flex;justify-content: center;">
+    <img src="ashok_chakra.png"  width=100px height=100px alt="ashok chakra">
+    </div>
+    <div style="background-color:green; height: 100px;"></div>
+</div>
+<hr>
+<h3>Creating table with some links of famous websites</h3>
+
+<div style="display:flex; justify-content: center;">
+<table border="2px solid gray" style="padding:5px; margin-bottom: 20px;">
+    <thead>
+        <tr>
+            <th class="cellpad">S No.</th>
+            <th class="cellpad">Website Name</th>
+            <th class="cellpad">Logo</th>
+            <th class="cellpad">Website Links</th>
+        </tr>
+    </thead>
+
+    <tbody style="padding: 10px;">
+        <tr>
+            <td class="cellpad">1</td>
+            <td class="cellpad">Google</td>
+            <td class="cellpad"><i class="fa fa-google fa-2x" style="color:red;"></i></td>
+            <td class="cellpad"><a href="https://www.google.com" style="text-decoration:none;">www.google.com</a></td>
+        </tr>
+
+        <tr>
+            <td class="cellpad">2</td>
+            <td class="cellpad">Facebook</td>
+            <td class="cellpad"><i class="fa fa-facebook-square fa-2x" style="color:blue;"></i></td>
+            <td class="cellpad"><a href="https://www.facebook.com" style="text-decoration:none;">www.facebook.com</a></td>
+        </tr>
+
+        <tr>
+            <td class="cellpad">3</td>
+            <td class="cellpad">Twitter</td>
+            <td class="cellpad"><i class="fa fa-twitter-square fa-2x" style="color:blue"></i></td>
+            <td class="cellpad"><a href="https://www.twitter.com" style="text-decoration:none;">www.twitter.com</a></td>
+        </tr>
+
+        <tr>
+            <td class="cellpad">4</td>
+            <td class="cellpad">Linkdin</td>
+            <td class="cellpad"><i class="fa fa-linkedin-square fa-2x" style="color:blue;"></i></td>
+            <td class="cellpad"><a href="https://www.linkedin.com" style="text-decoration:none;">www.linkedin.com</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<hr>
+
+<h3>Creation of Login form</h3>
+<div style="display:flex;justify-content: center;">
+    <span style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 26px;font-weight: bold;">Login Form</span>
+</div>
+<div style="display:flex-box;margin-left:37.5% ; margin-top: 30px;margin-bottom: 20px;width: 100%;">
+    <form action="#" method="post" autocomplete="on">
+        <input style="font-size: 20px; padding: 10px; margin: 5px; width: 25%;border-radius: 8px;display:block;" type="text" name="username" id="uname" placeholder="username">
+        <input style="font-size: 20px; padding: 10px;margin: 5px; width: 25%;border-radius: 8px;display: block;" type="password" name="password" id="upass" placeholder="password">
+        <button style="font-size: 18px;margin: 5px;background-color:red;font-size: large;color: white;border-radius: 8px; padding: 10px;width: 26.5%;text-align: center;">Submit</button>
+        <p style="margin-left: 110px;"><a href="register.html">Don't have account? Register</a></p>
+    </form>
+</div>
+<hr>
+
+<h3>Creation of registration page</h3>
+<div style="display:flexbox; justify-content: center;">
+<form action="#">
+    <input class="register" type="text" name="username" id="uname" placeholder="Username">
+    <input class="register" type="text" name="password" id="upass" placeholder="Password">
+    <input class="register" type="email" name="email" id="email" placeholder="Email">
+    <div>    
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="Male">
+        <input type="radio" name="gender" id="gender" value="Female">
+    </div>
+    <input class="register" type="submit" style="color: white;padding: 10px;font-size: 20px; width: 26.5%; background-color: red;" value="Register">
+</form>
+
+</div>
+
+</body>
+</html>

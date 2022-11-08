@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Registration-Page</title>
+    <script type="text/javascript" src="register.js"></script>
+    <!-- <script>
+            function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
+    </script> -->
+
+    
+</head>
+<body>
+
+    <button id="back" onclick="back()">Back to Registration-Page</button>
+
+    <div class="title">
+        <p id="title">Student Registration</p>
+    </div>
+
+    <div class="registerdiv" id="regdiv">
+        <div class="myForm">
+        <form action="#">
+            <label for="studentname">Student Name</label><br>
+            <input class="register" type="text" name="firstname" id="fname" placeholder="Enter First Name">
+            <input class="register" type="text" name="middlename" id="mname" placeholder="Enter Middle Name">
+            <input class="register" type="text" name="lastname" id="lname" placeholder="Enter Last Name">
+            <hr>
+            <ul style="display:flex;">
+                <li style="margin-left: -40px; width:60%;display: block;">
+                    <div>
+                    <label for="dob">Date of Birth</label><br>
+                    <input class="register" type="date" name="dob" id="dob" placeholder="Enter DOB in dd-mm-yyyy">
+                    </div>
+                </li>
+                <li style="width:60%;display: block;">
+                    <div>
+                        <label for="gender">Gender</label><br>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <hr>
+
+            <ul style="display:flex;">
+                <li style="margin-left: -40px; width:60%;display: block;">
+                    <div>
+                    <label for="email">Email Id</label><br>
+                    <input style="width: 56%;" class="register" type="email" name="email" id="email" placeholder="Enter Email">
+                    </div>
+                </li>
+                <li style="width:60%;display: block;">
+                    <div>
+                        <label for="mobile">Mobile No</label><br>
+                        <input style="width: 56%;" class="register" type="number" name="mobile" id="mobile" placeholder="Enter Mobile No">
+                    </div>
+                </li>
+            </ul>
+            
+            <hr>
+
+            <label for="add1">Address</label><br>
+            <input type="text" name="add1" placeholder="Address 1" id="add1">
+            <input type="text" name="add2" placeholder="Address 2" id="add2">
+            <input type="text" name="city" placeholder="City" id="add3">
+            <input type="text" name="state" placeholder="State" id="add4">
+            <input type="text" name="state" id="add4" style="opacity: 0;" disabled>
+            <input type="number" name="pincode" placeholder="Pincode" id="add5">
+            
+        </form>
+        <div><input type="submit" class="regbutton" onclick="myFunction()" value="Register"></div>
+        
+        </div>
+        
+    </div>
+
+
+
+    <div id="display" style="display:none;justify-content: center;">
+        <table border="2px solid gray" style="padding:5px; margin-bottom: 20px;">
+            <thead>
+               <tr>
+                 <th class="cellpad">Student Name</th>
+                 <th class="cellpad">Date Of Birth</th>
+                 <th class="cellpad">Gender</th>
+                 <th class="cellpad">Mobile No</th>
+                 <th class="cellpad">Email ID</th>
+                 <th class="cellpad">Address</th>
+                
+               </tr>
+            </thead>
+ 
+            <tbody> 
+               <tr>
+                 <td class="cellpad" id="sname"></td>
+                 <td class="cellpad" id="sdob"></td>
+                 <td class="cellpad" id="sgender"></td>
+                 <td class="cellpad" id="smobile"></td>
+                 <td class="cellpad" id="semail"></td>
+                 <td class="cellpad" id="saddress"></td>
+               </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
